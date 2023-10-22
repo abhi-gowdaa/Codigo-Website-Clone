@@ -1,0 +1,60 @@
+
+
+.banner{
+    margin:8.5%;
+    margin-left: 13.5%;
+}
+
+
+.title{
+    font-size: 5.6rem;
+    font-weight: 700;
+    letter-spacing: -.025em;
+    margin-bottom: 2.5%;
+    color: black;
+    --o: 0;
+    --y: 70px;
+    animation: fade-in 1.95s cubic-bezier(.2,1,.3,1) .2s backwards;
+}
+
+.span{
+
+    color: #d5333e;
+}
+
+.description{
+    
+       
+        line-height: 1.5;
+        max-width: 53rem;
+        font-size: 1.4rem;
+        --o: 0;
+        --y: 70px;
+        animation: fade-out 2s ;
+}
+
+
+
+@keyframes fade-in {
+    0% {
+        opacity: var(--o);
+        transform: translateY(5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+    
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: var(--o);
+        transform: translateY(7rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+    
+}

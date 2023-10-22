@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.containers{
+display:flex;
+}
+
+
+.container {
+  position: relative;
+  margin: auto;
+
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 255, 101);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  text-align:center;
+}
+
+.container:hover {
+  width: 380px;
+  height: 380px;
+  
+}
+
+.container img {
+  border-radius: 50%;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   transition: transform 0.5s ease-in-out;
+}
+
+.container:hover img {
+width:130px;
+  transform:translate(-50%, 50%);
+  
+}
+
+.text {
+  visibility: hidden;
+  opacity:0;
+  position: relative;
+  padding:25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  
+}
+
+.container:hover .text {
+  visibility: visible;
+  opacity: 1;
+    transition: all 0.3s ease-in-out; 
+
+}
+
+@keyframes change-color {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10rem);
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+  <div class="container">
+  <div class="text">
+      <h4>User Experience</h4>
+      <h2>We are all users</h2>
+      <p>With over 200 digital projects and counting, we get what users want and need pretty easily. UX is the core to everything we build. In Codigo, we take user research,
+ competitive analysis, wireframes, user flows, content maps very seriously </p>
+      
+    </div>
+    <img src="https://www.codigo.co/_next/image?url=%2Fimages%2Fservices%2Fux.png&w=3840&q=85" alt="hiii" />
+    
+  </div>
+ 
+  </div>
+</body>
+</html>
+
+
+<!-- https://iwonderwhoiam.w3spaces.com/saved-from-Tryit-2023-10-12-kuwhz.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    
+.c:hover+ .hide{
+  display: block;
+  color: red;
+  padding:100px;
+  border-radius:100%;
+  background-color:yellow;
+
+  width:100px;
+  height:100px;
+  margin:auto;
+  text-align:center;
+   
+  }
+
+
+
+.c{
+padding:10px;
+  border-radius:150px;
+  background-color:red;
+  margin:auto;
+  margin-top:0px;
+  width:90px;
+height:90px;
+  text-align:center;
+  
+  }
+
+
+.hide{
+margin-top:0px;
+padding:30px;
+  border-radius:150px;
+  background-color:yellow;
+  margin:auto;
+  margin-top:0px;
+  width:90px;
+height:90px;
+  text-align:center;
+  color:yellow;
+  transition: ease-out 0.5s ;
+ 
+}
+
+.c:hover {
+  text-align: center;
+  padding: 30px;
+  width: 50px;
+  height: 50px;
+  margin-top:0px;
+  border-radius: 100%;
+  animation: change-color 1s ;
+}
+
+@keyframes change-color {
+  from {
+    transform: translateY(1rem);
+  }
+  to {
+    transform: translateY(20rem);
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="c"	>over me.</div>
+<div class="hide"><p>I am shown when 
+someone hovers over 
+the div above.</p></div>
+
+</body>
+</html>
